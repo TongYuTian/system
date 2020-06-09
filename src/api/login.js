@@ -19,5 +19,15 @@ export default {
             method:"get",
             url:`/user/info/${token}`
         })
+    },
+    //退出登录接口
+    loginOut(token){
+        return request({
+            method : "post",
+            url : "/user/logout",
+            data : {
+                token
+            }
+        })
     }
 }

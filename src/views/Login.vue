@@ -1,14 +1,14 @@
 <template>
   <div class="login-container">
-    <el-form ref="form" :model="form" :rules="rules" label-width="50px" class="login-form">
+    <el-form ref="form" :model="form" :rules="rules" label-width="60px" class="login-form">
       <h2 class="login-title">积云仙女管理系统</h2>
       <el-form-item label="账号" prop="username">
-        <el-input v-model="form.username" placeholder="请输入账号" value="admin"></el-input>
+        <el-input v-model="form.username" placeholder="请输入账号"></el-input>
       </el-form-item>
       <el-form-item label="密码" prop="password">
-        <el-input v-model="form.password" type="password" placeholder="请输入密码" value="123456"></el-input>
+        <el-input v-model="form.password" type="password" placeholder="请输入密码"></el-input>
       </el-form-item>
-      <el-button type="primary" @click="submitForm('form')">登录</el-button>
+      <el-button class="login-btn" type="primary" @click="submitForm('form')">登录</el-button>
     </el-form>
   </div>
 </template>
@@ -111,6 +111,10 @@ export default {
 .login-title {
   text-align: center;
   color: #303133;
+  margin-bottom: 20px;
+}
+.login-btn {
+  margin-left: 140px;
 }
 .login-container {
   width: 100%;
