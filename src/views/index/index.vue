@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <p>首页</p>
+  <div class="indexApp">
+    <h2 class="in-title">欢迎访问积云仙女管理系统</h2>
   </div>
 </template>
 
@@ -27,4 +27,11 @@ export default {
 </script>
 
 <style scoped>
+.indexApp {
+    text-align: center;
+}
+.in-title {
+    font-size:30px;
+    margin-top:20px;
+}
 </style>
